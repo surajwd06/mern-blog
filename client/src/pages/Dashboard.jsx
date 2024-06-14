@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import DashProfile from "../components/DashProfile";
 import DashSidebar from "../components/Dashboard";
@@ -9,8 +9,8 @@ const Dashboard = () => {
   useEffect(() => {
     const urlParsms = new URLSearchParams(location.search);
     const tabFromUrl = urlParsms.get("tab");
-    if(tabFromUrl){
-      setTab(tabFromUrl)
+    if (tabFromUrl) {
+      setTab(tabFromUrl);
     }
   }, [location.search]);
 

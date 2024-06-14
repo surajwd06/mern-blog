@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Sidebar } from "flowbite-react";
 import { HiArrowSmRight, HiUser } from "react-icons/hi";
 import { Link, useLocation } from "react-router-dom";
@@ -23,6 +23,7 @@ const DashSidebar = () => {
               icon={HiUser}
               label={"User"}
               labelColor="dark"
+              as={'div'}
             >
               Profile
             </Sidebar.Item>
