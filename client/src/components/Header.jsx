@@ -45,7 +45,7 @@ const Header = () => {
           <Dropdown
             arrowIcon={false}
             label={
-              <Avatar alt="user" img={currentUser.profilePicture} rounded />
+              <Avatar alt="user" img={currentUser.profilePicture && currentUser.profilePicture} rounded />
             }
           >
             <Dropdown.Header>
