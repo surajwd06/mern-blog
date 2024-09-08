@@ -16,14 +16,18 @@ const userSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
-    profilePicture:{
-      type:String,
-      default:""
-    }
+    profilePicture: {
+      type: String,
+      default: "",
+    },
+    isAdmin: {
+      type: Boolean,
+      default: false,
+    },
   },
   { timestamps: true }
 );
 
 const User = mongoose.model("User", userSchema);
 
-export default User
+export default User;
